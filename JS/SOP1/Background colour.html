@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Background Color is Being Changed</title>
+</head>
+
+<body id="background">
+    <h1>Background color is being changed every 1 second</h1>
+
+    <script>
+        var i = 0; // Variable to track the current color index
+
+        function changeColor() {
+            var doc = document.getElementById("background");
+            var colors = ["red", "blue", "brown", "green", "yellow", "pink", "orange"]; // Array of colors
+            doc.style.backgroundColor = colors[i]; // Set the background color
+            i++; // Move to the next color
+            if (i >= colors.length) {
+                i = 0; // Reset to the first color if the end of the array is reached
+            }
+
+            if (i == 7) { // If the 7th color (which is 'orange') is reached, change to white
+                doc.style.backgroundColor = "white";
+            }
+        }
+
+        setInterval(changeColor, 1000); // Change the background color every 1 second
+    </script>
+
+    <input type="button" name="b1" value="Over here!!" onmouseover="this.style.backgroundColor='lightgray'">
+    <input type="submit" name="b2" value="Click here" onclick="alert('Button clicked!')">
+
+</body>
+
+</html>

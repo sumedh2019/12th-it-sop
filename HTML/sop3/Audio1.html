@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+<head><title> Multiple source file formats</title> 
+</head> 
+<body> 
+<h1 align="center">Multiple Audio files with controls</h1> 
+<p> The text between the audio tags will only be displayed in browsers that do not 
+support the audio element.</p> 
+<h3>List of audio file formats</h3> 
+<ol> 
+ <li>mp3-audio/mpeg</li> 
+ <li>ogg-audio/ogg</li> 
+ <li>wav-audio/wav</li> 
+</ol> 
+<audio controls autoplay> 
+ <source src="audio1.wav" id="wavSource" type="audio/wav"> 
+ <source src="audio2.mp3" id="mp3Source" type="audio/mpeg"> 
+ <source src="audio3.ogg" id="oggSource" type="audio/ogg"> 
+Your browser does not support the audio element. 
+</audio> 
+</body> 
+</html>

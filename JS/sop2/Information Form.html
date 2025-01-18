@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scope of JavaScript</title>
+</head>
+
+<body>
+
+    <h1>Information Form</h1>
+
+    <form name="F1" onsubmit="return validateEmail()">
+        Your Name: <input type="text" name="name" required><br><br>
+
+        Address: <textarea name="txt_address" placeholder="Permanent address" required></textarea><br><br>
+
+        Contact: <input type="tel" name="telephone" maxlength="10" pattern="[0-9]{10}" required><br><br>
+
+        Email: <input type="email" name="txt_email" placeholder="Enter your email" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+<script type="text/javascript">
+    function validateEmail() {
+        var x = document.forms["F1"]["txt_email"].value;
+
+        var at_pos = x.indexOf("@");
+        var last_pos = x.lastIndexOf("@");
+        var first_dot_pos = x.indexOf(".");
+        var dot_pos = x.lastIndexOf(".");
+
+        if (at_pos < 1 || dot_pos < at_pos + 2 || dot_pos + 2 >= x.length) {
+            alert("Invalid email address.");
+            document.forms["F1"]["txt_email"].focus();
+            return false;
+        }
+
+        if (first_dot_pos < at_pos || last_pos != at_pos) {
+            alert("Invalid email address.");
+            document.forms["F1"]["txt_email"].focus();
+            return false;
+        }
+
+        alert("Valid email address.");
+        return true;
+    }
+</script>
+
+</html>

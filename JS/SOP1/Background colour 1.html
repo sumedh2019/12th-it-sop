@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Background Color Changing</title>
+</head>
+
+<body id="background" onload="setInterval(change, 1000)">
+    <h1>Background color is being changed every 1 second</h1>
+
+    <script>
+        var i = 0; // To track the color index
+
+        function change() {
+            var doc = document.getElementById("background");
+            var colors = ["red", "blue", "brown", "green", "yellow", "pink", "orange"];
+
+            doc.style.backgroundColor = colors[i]; // Change background color
+            i++; // Move to the next color
+            if (i >= colors.length) {
+                i = 0; // Reset to the first color when the end of the array is reached
+            }
+        }
+    </script>
+</body>
+
+</html>
