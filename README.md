@@ -8,22 +8,22 @@ This repository contains chapter-wise SOPs for **12th IT**, covering Advanced We
 ## 📚 Chapter Wise SOP List
 
 ### 1. Advanced Web Designing
-- **SOP 1**: [Details](#)
-- **SOP 2**: [Details](#)
-- **SOP 3**: [Details](#)
-- **SOP 4**: [Details](#)
-- **SOP 5**: [Details](#)
+- **SOP 1**:
+- **SOP 2**: 
+- **SOP 3**:
+- **SOP 4**: 
+- **SOP 5**: 
 
 ### 2. JavaScript
-- **SOP 1**: [Details](#)
-- **SOP 2**: [Details](#)
-- **SOP 3**: [Details](#)
-- **SOP 4**: [Details](#)
+- **SOP 1**: 
+- **SOP 2**:
+- **SOP 3**: 
+- **SOP 4**: 
 
 ### 3. Server-Side Scripting
-- **SOP 1**: [Details](#)
-- **SOP 2**: [Details](#)
-- **SOP 3**: [Details](#)
+- **SOP 1**: 
+- **SOP 2**: 
+- **SOP 3**: 
 
 ---
 
