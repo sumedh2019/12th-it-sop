@@ -43,4 +43,4 @@ Feel free to:
 ---
 
 ## 📧 Contact
-For any questions or support, reach out to me at **[sumedhkatkar18@gmail.com](mailto:your_email@example.com)**.
+For any questions or support, reach out to me at **sumedhkatkar18@gmail.com**.
