@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Sop 3 Javascript Count vowels</title>
+    <title>Count Vowels in a String</title>
 </head>
 <body>
-<form name="form1">
- <h1>Enter the String whose vowel isto be counted</h1>
- <input type="text" name="text1">
- <input type="button" name="btn_checkvowel" value="Click to
-count" onclick="count()">
-</form>
-<script type="text/javascript">
- function count()
- {
- vari,ch,str,counter=0;
- str=form1.text1.value;
- for(i=0;i<str.length;i++)
- {
- ch=str.charAt(i);
+    <form name="form1">
+        <h1>Find Number of Vowels in a String </h1>
+        <input type="text" name="text1">
+        <input type="button" name="btn_checkvowel" value="Click to count" onclick="countVowels()">
+    </form>
 
- if(ch=='A'||ch=='a'||ch=='e'||ch=='E'||ch=='i'||ch=='I'||ch=='o'||ch
-=='O'||ch=='u'||ch=='U')
- counter++;
-RayatShikshanSanstha’s
-Mahatma Gandhi Sec. & Higher Sec. School, Umbraj
-Name: Class: Batch:
-Subject: Roll no:
-Title of experiment:
-Expt no: Date: / /
- }
-</script>
+    
+    <p id="result"></p> <!-- This is where the result will be displayed -->
+
+    <script type="text/javascript">
+        function countVowels() {
+            var str = document.form1.text1.value;
+            var counter = 0;
+            
+            for (var i = 0; i < str.length; i++) {
+                var ch = str.charAt(i).toLowerCase();
+                if (ch === 'a' || ch === 'e' || ch === 'i' || ch === 'o' || ch === 'u') {
+                    counter++;
+                }
+            }
+
+            // Display result on webpage
+            document.getElementById("result").innerHTML = "Number of vowels: " + counter;
+        }
+    </script>
 </body>
 </html>
